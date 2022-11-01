@@ -11,7 +11,7 @@ var mainEl = document.getElementById("main");
 
 var question = [
    { title: "What is the purpose of local storage?",
-    choices: ["Cookies", "Easy homework", "Delete Data", "Persist Data"],
+    choices: ["Cookies", "Easy Homework", "Delete Data", "Persist Data"],
     answer: "Persist Data"},
 
     { title: "What is an API?",
@@ -28,6 +28,7 @@ var question = [
       answer: "All of the above"},
 ]
 function displayQuestion() {
+    questionArr = [];
 
 }
 
@@ -53,7 +54,6 @@ function countdown() {
 }
 
 // WHEN I answer a question
-
 // THEN I am presented with another question
 // WHEN I answer a question incorrectly
 // THEN time is subtracted from the clock
