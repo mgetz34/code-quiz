@@ -6,9 +6,27 @@
 
 var timerEL = document.getElementById("countdown");
 var mainEl = document.getElementById("main");
-var questionOne = []
-var questionTwo = []
-var questionThree = []
+
+// questions are formed as an array of objects
+
+var question = [
+   { title: "What is the purpose of local storage?",
+    choices: ["Cookies", "Easy homework", "Delete Data", "Persist Data"],
+    answer: "Persist Data"},
+
+    { title: "What is an API?",
+    choices: ["Annual Process Income", "Average Push Information", "Almost Programmed Incorrectly", "Application Program Interface"],
+    answer: "Application Program Interface"},
+
+    { title: "What does the && logical operator require to return true?",
+    choices: ["Both conditions to be truthy", "Both conditions to be false", "Only one condition to be truthy", "What's a logical operator?"],
+    answer: "Both conditions to be truthy"},
+
+    {
+      title: "What are examples of wireframing?",
+      choices: ["Excalidraw", "Drawio", "Balsalmiq", "All of the above"],
+      answer: "All of the above"},
+]
 
 // main quiz timer
 
