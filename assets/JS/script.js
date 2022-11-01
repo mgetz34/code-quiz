@@ -27,6 +27,9 @@ var question = [
       choices: ["Excalidraw", "Drawio", "Balsalmiq", "All of the above"],
       answer: "All of the above"},
 ]
+function displayQuestion() {
+
+}
 
 // main quiz timer
 
@@ -51,9 +54,6 @@ function countdown() {
 
 // WHEN I answer a question
 
-function displayQuestion() {
-
-}
 // THEN I am presented with another question
 // WHEN I answer a question incorrectly
 // THEN time is subtracted from the clock
