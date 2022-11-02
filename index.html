@@ -8,14 +8,31 @@
     <link rel="stylesheet" src="./assets/CSS/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="div1">
       <h1 class="title">Code Quiz!!!</h1>
-      <button>Start Quiz</button>
+      <h2>Click the button below to start the timer.</h2>
+      <p>
+        The user has x seconds to complete as many questions as possible, and
+        every wrong answer deducts 5 seconds instantly off the clock. Good Luck!
+      </p>
+      <button class="startBtn">Start Quiz</button>
       <h2 id="countdown"></h2>
       <p id="main"></p>
     </div>
-    <div><input id="quiz-results" type="text" name="Student's Initials" /></div>
-    <div><button>Submit</button></div>
+    <div class="div2">
+      <h2>Submit your high score!</h2>
+      <form class="quiz-results">
+        <label for="initials">Intials:</label>
+        <input
+          type="text"
+          id="studentInitials"
+          name="initials"
+          title="Student's Initials"
+          type="submit"
+        />
+      </form>
+    </div>
+    <div><button id="submitbtn">Submit</button></div>
     <script src="./assets/JS/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,9 @@
-#quiz-results {
+body {
+    background-color: aqua;
+}
+
+
+.div2 {
     display: none;
 }
+
