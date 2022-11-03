@@ -4,14 +4,17 @@
 // WHEN I click the start button
 // THEN a timer starts and I am presented with a question
 
-var startScreen = document.getElementsById("div1")
+var startScreen = document.getElementById("div1")
 var start = document.getElementById("startBtn")
 var timerEL = document.getElementById("countdown");
 var mainEl = document.getElementById("main");
 var timeLeft = 60;
+var clock;
 var questionSection = document.getElementById('quiz-questions');
 var quizResults = document.getElementById("div3");
+
 // questions are formed as an array of objects
+
 var questions = [
     {
         title: "What is the purpose of local storage?",
@@ -42,9 +45,9 @@ var questions = [
 function displayQuestion() {
     questionArr = [];
 
-    for (var index = 0; index questions.length; index++)
+    for (var index = 0; index < questions.length; index++)
 
-    var buttonEL = document.createElement("start")
+        var buttonEL = document.createElement("start")
 
     buttonEL.textContent = questions[index]
 
@@ -55,7 +58,7 @@ function displayQuestion() {
 // main quiz timer
 
 function countdown() {
-    var timeLeft = 60;
+
 
     var timeInterval = setInterval(function () {
 
@@ -63,7 +66,7 @@ function countdown() {
             timerEL.textContent = timeLeft + " seconds remaining";
             timeLeft--;
         } else if (timeLeft === 1) {
-            timerEL.textContent = timeLeft = " second remaining";
+            timerEL.textContent = timeLeft + " second remaining";
             timeLeft--;
         } else {
             timerEL.textContent = '';
@@ -76,7 +79,10 @@ function countdown() {
 // WHEN I answer a question
 // THEN I am presented with another question
 
-function displayNextQuestion() {
+function startGame(event) {
+    startScreen.classList.add("hide")
+
+    console.log("click");
 
 }
 
@@ -87,6 +93,8 @@ function displayNextQuestion() {
 // WHEN the game is over
 // THEN I can save my initials and score
 
-function gameOver () {
+function gameOver() {
 
 }
+
+start.addEventListener("click", startGame);

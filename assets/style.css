@@ -13,7 +13,7 @@ body {
 }
 
 #div1 {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
 
@@ -27,13 +27,18 @@ font-weight: bold;
 }
 
 
- #div3 {
+.hide {
     display: none;
 }
 
+/* 
+ #div3 {
+    display: none;
+} */
+
 
 #timer {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 0px;
     right: 80px;
