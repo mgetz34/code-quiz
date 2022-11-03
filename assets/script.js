@@ -10,8 +10,9 @@ var timerEL = document.getElementById("countdown");
 var mainEl = document.getElementById("main");
 var timeLeft = 60;
 var clock;
-var questionSection = document.getElementById('quiz-questions');
+var questionSection = document.getElementById('div2');
 var quizResults = document.getElementById("div3");
+var indexTracker = 0
 
 // questions are formed as an array of objects
 
@@ -43,15 +44,14 @@ var questions = [
 
 
 function displayQuestion() {
-    questionArr = [];
+    var title = document.getElementById("title")
+    var choice0 = document.getElementById("choice0")
+    var choice1 = document.getElementById("choice1")
+    var choice2 = document.getElementById("choice2")
+    var choice3 = document.getElementById("choice3")
+    var q = questions[indexTracker]
 
-    for (var index = 0; index < questions.length; index++)
 
-        var buttonEL = document.createElement("start")
-
-    buttonEL.textContent = questions[index]
-
-    start.addEventListener("click", start);
 };
 
 
@@ -81,8 +81,10 @@ function countdown() {
 
 function startGame(event) {
     startScreen.classList.add("hide")
+    questionSection.classList.remove("hide")
+    displayQuestion();
+    // start timer 
 
-    console.log("click");
 
 }
 
