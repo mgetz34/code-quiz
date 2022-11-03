@@ -3,6 +3,7 @@
 // GIVEN I am taking a code quiz
 // WHEN I click the start button
 // THEN a timer starts and I am presented with a question
+
 var startScreen = document.getElementsById("div1")
 var start = document.getElementById("startBtn")
 var timerEL = document.getElementById("countdown");
@@ -85,3 +86,7 @@ function displayNextQuestion() {
 // THEN the game is over
 // WHEN the game is over
 // THEN I can save my initials and score
+
+function gameOver () {
+
+}
