@@ -19,9 +19,10 @@ Deploy application via URL listed below
 ## Credits
 
 Jose Lopez: Central Tutor Support Staff
+
 Rebecca Burke: Central Tutor Support Staff
 
-If you followed tutorials, include links to those here as well.
+Justin Moore: Class TA and official Superhero
 
 ## License
 
