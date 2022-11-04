@@ -28,10 +28,10 @@ Justin Moore: Class TA and official Superhero
 
 Refer to the license in the repo
 
-## Features
-
-If your project has a lot of features, list them here.
-
 ## Tests
 
 Application progress is still under construction. Questions to be added and functionality to be polished before the end of January 2023
+
+## Appliaction Link
+
+[Code Quiz Michael Getz](https://mgetz34.github.io/xyz/)

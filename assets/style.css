@@ -31,15 +31,9 @@ font-weight: bold;
     display: none;
 }
 
-/* 
- #div3 {
-    display: none;
-} */
-
 
 #timer {
-    /* display: none; */
     position: absolute;
-    top: 0px;
-    right: 80px;
+    top: 100px;
+    right: 100px;
 }
