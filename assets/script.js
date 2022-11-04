@@ -6,13 +6,15 @@
 
 var startScreen = document.getElementById("div1")
 var start = document.getElementById("startBtn")
-var timerEL = document.getElementById("timer");
+var timerEL = document.getElementById("timer")
 var timeLeft = document.getElementById("countdown")
 var mainEl = document.getElementById("main");
-var questionSection = document.getElementById('div2');
-var quizResults = document.getElementById("div3");
+var questionSection = document.getElementById('div2')
+var quizResults = document.getElementById("div3")
 var indexTracker = 0
 var timeLeft = 30;
+var initials = document.getElementById("studentInitials")
+var submit = document.getElementById("submitBtn")
 
 // questions are formed as an array of objects
 
@@ -40,7 +42,7 @@ var questions = [
         choices: ["Excalidraw", "Drawio", "Balsalmiq", "All of the above"],
         answer: "All of the above"
     },
-];
+]
 
 // WHEN I answer a question
 // THEN I am presented with another question
@@ -62,8 +64,7 @@ function displayQuestion() {
         choice2.textContent = q.choices[2]
         choice3.textContent = q.choices[3]
     }
-
-};
+}
 
 function getResults(event) {
 
@@ -99,9 +100,7 @@ function countdown() {
             displayQuestion();
         }
     }, 1000);
-
 }
-
 
 function startGame(event) {
     timerEL.classList.remove("hide")
@@ -115,7 +114,6 @@ function startGame(event) {
 // WHEN all questions are answered or the timer reaches 0
 // THEN the game is over
 // WHEN the game is over
-// THEN I can save my initials and score
 
 function gameOver() {
     questionSection.classList.add("hide")
@@ -123,7 +121,35 @@ function gameOver() {
 
 }
 
-
-
 start.addEventListener("click", startGame);
 questionSection.addEventListener("click", getResults);
+
+// THEN I can save my initials and score
+
+function saveInitials() {
+    var lastInitials = {
+        initials: initials.value
+    };
+    localStorage.setItem("lastInitials", JSON.stringify(lastInitials));
+}
+
+function showInitials() {
+    var lastInitialsDisplay = JSON.parse(localStorage.getItem("lastInitials"));
+
+    if (lastInitialsDisplay !== null) {
+        document.getElementById("studentInitials").innerHTML = lastInitialsDisplay.initials;
+    } else {
+        return;
+    }
+}
+
+submit.addEventListener("click", function (event) {
+    event.preventDefault();
+    saveInitials();
+    showInitials();
+});
+
+function init() {
+    showInitials();
+}
+init();

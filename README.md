@@ -14,7 +14,7 @@ Deploy application via URL listed below
 
 ## Usage
 
-    ![alt text](assets/images/screenshot.png)
+    [Quiz Screenshot](assets/images/Screenshot 2022-11-03 214458.png)
 
 ## Credits
 
@@ -22,7 +22,7 @@ Jose Lopez: Central Tutor Support Staff
 
 Rebecca Burke: Central Tutor Support Staff
 
-Justin Moore: Class TA and official Superhero
+Justin Moore: Class TA and Official Superhero!
 
 ## License
 
@@ -30,7 +30,17 @@ Refer to the license in the repo
 
 ## Tests
 
-Application progress is still under construction. Questions to be added and functionality to be polished before the end of January 2023
+Application progress is still under construction. Questions to be added and functionality to be polished before the end of January 2023. Current issues include:
+
+1. Timer will not stop the flow of questions when it reaches 0.
+
+2. There are currently not enough questions.
+
+3. The user has to log their own score, I would like to build out functionality where the computer tracks correct and incorrect answers.
+
+4. Local Storage of high-scores does not currently work, needs adjustment. Also, the display of past high scores is a planned, future addition to the application.
+
+5. CSS is severly lacking, further design and optimization planned for the future.
 
 ## Appliaction Link
 
