@@ -9,10 +9,10 @@ var start = document.getElementById("startBtn")
 var timerEL = document.getElementById("timer");
 var timeLeft = document.getElementById("countdown")
 var mainEl = document.getElementById("main");
-var timeLeft = 60;
 var questionSection = document.getElementById('div2');
 var quizResults = document.getElementById("div3");
 var indexTracker = 0
+var timeLeft = 30;
 
 // questions are formed as an array of objects
 
@@ -99,6 +99,7 @@ function countdown() {
             displayQuestion();
         }
     }, 1000);
+
 }
 
 
@@ -121,6 +122,8 @@ function gameOver() {
     quizResults.classList.remove("hide")
 
 }
+
+
 
 start.addEventListener("click", startGame);
 questionSection.addEventListener("click", getResults);

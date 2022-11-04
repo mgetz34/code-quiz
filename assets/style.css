@@ -1,5 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    background-color: bisque;
 }
 
 body {
@@ -12,11 +13,31 @@ body {
     align-items: center;
 }
 
-#div1 {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
+title {
+    text-align: center;
+}
 
+#div1 {
+    background-color: aqua;
+    border-radius: 20px 20px 20px 20px;
+}
+#div1 p {
+    font-weight: bolder;
+}
+
+/* 
+#startBtn:hover {
+    background-color: crimson;
+    color: black;
+    font-weight: bolder;
+    border-radius: 40px;
+} */
+
+#qBtn:hover {
+         background-color: crimson;
+         color: black;
+         font-weight: bolder;
+         border-radius: 40px;
 }
 
 .initials {
