@@ -14,7 +14,7 @@ Deploy application via URL listed below
 
 ## Usage
 
-    [Quiz Screenshot](assets/images/Screenshot 2022-11-03 214458.png)
+![Quiz Screenshot](assets/images/Screenshot 2022-11-03 214458.png)
 
 ## Credits
 
