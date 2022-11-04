@@ -40,8 +40,11 @@ Application progress is still under construction. Questions to be added and func
 
 4. Local Storage of high-scores does not currently work, needs adjustment. Also, the display of past high scores is a planned, future addition to the application.
 
-5. CSS is severly lacking, further design and optimization planned for the future.
+5. Upon clicking submit, the user is re-directed to the beginning of the quiz. I would like to make sure scores are logged and displayed, with an option to re-try
+   the quiz per the user's convenience.
+
+6. CSS is severly lacking, further design and optimization planned for the future.
 
 ## Appliaction Link
 
-[Code Quiz Michael Getz](https://mgetz34.github.io/xyz/)
+[Code Quiz Michael Getz](https://mgetz34.github.io/code-quiz/)
